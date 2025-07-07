@@ -7,7 +7,7 @@ auto encendido
 El auto se apagó
 */
 
-const auto = {
+const Auto = {
     //propiedad
     marca: "Toyota",
     modelo: "Corolla",
@@ -18,30 +18,30 @@ const auto = {
     //metodos
     encender: function(){
         this.encendido = true;
-        document.writeln("El auto esta encendido")
+        document.writeln("El Auto esta encendido")
     },
     apagar: function(){
         this.encendido = false;
-        document.writeln("El auto esta apagado")
+        document.writeln("El Auto esta apagado")
     },
 }
 
-// Propiedades del auto
-console.log(auto)
+// Propiedades del Auto
+console.log(Auto)
 document.writeln('<h1>Objeto auto</h1>')
-document.writeln(`<p>Marca: ${auto.marca}</p>`)
-document.writeln(`<p>Modelo: ${auto.modelo}</p>`)
-document.writeln(`<p>Año: ${auto.anio}</p>`)
-document.writeln(`<p>Color: ${auto.color}</p>`)
-document.writeln(`<p>Velocidad: ${auto.velocidad}</p>`)
+document.writeln(`<p>Marca: ${Auto.marca}</p>`)
+document.writeln(`<p>Modelo: ${Auto.modelo}</p>`)
+document.writeln(`<p>Año: ${Auto.anio}</p>`)
+document.writeln(`<p>Color: ${Auto.color}</p>`)
+document.writeln(`<p>Velocidad: ${Auto.velocidad}</p>`)
 
 // usar los metodos
 const autoAccion = prompt("¿Quieres encender o apagar el auto?");
 
 if (autoAccion === "encender") {
-    auto.encender();
+    Auto.encender();
 } else if (autoAccion === "apagar") {
-    auto.apagar();
+    Auto.apagar();
 } else {
     document.writeln("Opción no válida.<br>");
 }

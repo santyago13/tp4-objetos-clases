@@ -8,7 +8,7 @@ Utiliza este objeto para mostrar la descripción, ingresar y extraer dinero y vo
 */
 
 
-const cuenta = {
+const Cuenta = {
   // propiedades
   titular: "Alex",
   saldo: 0,
@@ -34,12 +34,12 @@ do {
 const opcion = prompt("¿Qué deseas hacer?\n1 - Informar\n2 - Ingresar\n3 - Extraer");
 switch (opcion) {
   case "1":
-    alert(cuenta.informar());
+    alert(Cuenta.informar());
     break;
   case "2":
     const montoIngreso = parseInt(prompt("¿Cuánto dinero deseas ingresar?"));
     if (!isNaN(montoIngreso)) {
-      cuenta.ingresar(montoIngreso);
+      Cuenta.ingresar(montoIngreso);
     } else {
       alert("El valor ingresado no es válido.");
     }
@@ -47,7 +47,7 @@ switch (opcion) {
   case "3":
     const montoExtraccion = parseInt(prompt("¿Cuánto dinero deseas extraer?"));
     if (!isNaN(montoExtraccion)) {
-      cuenta.extraer(montoExtraccion);
+      Cuenta.extraer(montoExtraccion);
     } else {
       alert("El valor ingresado no es válido.");
     }
