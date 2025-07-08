@@ -45,9 +45,9 @@ class Persona {
 }
 
 // Crear instancias de Persona
-let persona1 = new Persona("Juan", 25, "12345678A", "H", 70, 1.75, 1998);
-let persona2 = new Persona("Ana", 30, "87654321B", "M", 60, 1.65, 1993);
-let persona3 = new Persona("Luis", 45, "11223344C", "H", 80, 1.8, 1978);
+let persona1 = new Persona("Juan", 25, "12345678A", "H", null, 1.75, 1981);
+let persona2 = new Persona("Ana", 30, "87654321B", "M", null, 1.65, 1969);
+let persona3 = new Persona("Luis", 45, "11223344C", "H", null, 1.8, 1968);
 // Crear un array para almacenar las personas
 let personas = [persona1, persona2, persona3];
 // Mostrar los datos de cada persona
