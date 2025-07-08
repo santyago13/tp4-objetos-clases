@@ -23,35 +23,35 @@ class Libro {
   }
 
   get ISBN() {
-    return this._ISBN;
+    return this.getISBN;
   }
   set ISBN(value) {
-    this._ISBN = value;
+    this.setISBN = value;
   }
 
   get titulo() {
-    return this._titulo;
+    return this.getTitulo;
   }
   set titulo(value) {
-    this._titulo = value;
+    this.setTitulo = value;
   }
 
   get autor() {
-    return this._autor;
+    return this.getAutor;
   }
   set autor(value) {
-    this._autor = value;
+    this.setAutor = value;
   }
 
   get numeroPaginas() {
-    return this._numeroPaginas;
+    return this.getNumeroPaginas;
   }
   set numeroPaginas(value) {
-    this._numeroPaginas = value;
+    this.setNumeroPaginas = value;
   }
 
   mostrarLibro() {
-    return `El libro ${this.titulo} con ISBN ${this.ISBN} creado por el autor ${this.autor} tiene páginas ${this.numeroPaginas}.`;
+    return `El libro ${this.setTitulo} con ISBN ${this.setISBN} creado por el autor ${this.setAutor} tiene páginas ${this.setNumeroPaginas}.`;
   }
 }
 
