@@ -2,7 +2,7 @@
 // Luego, escribe una función que reciba un objeto persona y un nuevo hobby y añada este hobby a la lista de hobbies de la persona.
 //  Finalmente, imprime los hobbies de la persona usando un bucle. Usa prompt para ingresar los datos de la persona y el nuevo hobby.
 
-const Persona = {
+const persona = {
     //propiedades
     nombre: "",
     edad: "",
@@ -29,14 +29,14 @@ const Persona = {
 }
 
 // Bucle para pedir datos
-Persona.pedirNombre();
-Persona.pedirEdad();
+persona.pedirNombre();
+persona.pedirEdad();
 
 do {
-    Persona.pedirHobbies();
+    persona.pedirHobbies();
 } while (confirm("¿Deseas ingresar otro hobby?"));
 
 // Mostrar datos finales
-Persona.mostrarDatos();
+persona.mostrarDatos();
 
 
